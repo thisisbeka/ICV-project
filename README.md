@@ -1,5 +1,35 @@
 # ICV-project
 
+
+## Introduction
+Computer vision and Machine learning have been a hot topic in research in the past decade. The substantial evolvement of technology and rapidly improving computation resources has allowed us to process a large amount of data and derive practical insights from them. Advanced AI models are taking over many industries and performing human tasks with high accuracy and precision. Food classification is one of the applications of image processing. There are quite a number of researches and Machine Learning solutions already available when it comes to classifying food items from images. However, identifying food items and classifying them directly in a video is a slightly more complicated problem which can be approached in many different ways.
+
+## Related work
+There have been various food classifications already done. Some of those works are briefly reported below. We actually took insights from some of them for our project:
+
+	[Food Image Classification with Convolutional Neural Network](https://ieeexplore.ieee.org/document/8550005) 
+	Analysis of food images: Features and Classification, https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5448982/
+	Multiclass Food Classification, https://www.kaggle.com/theimgclist/multiclass-food-classification-using-tensorflow
+	Build Video Classification Model, https://www.analyticsvidhya.com/blog/2019/09/step-by-step-deep-learning-tutorial-video-classification-python/
+
+
+
+
+## Implemented Model (with link to github)
+The entire structure consists of two parts: an image classifier and a video stream processor.
+
+The image classifier is trained on top of the Inceptionv3 model with ImageNet weights so as to leverage the benefits of transfer learning. To train this classifier, we used the Food 101 dataset. Here’s a quick overview of the dataset:
+	Total classes: 101,	Total images: 101000
+	Training images: 75750,	Test images: 25250
+We finetune the model with the following settings:
+batch_size = 32
+
+Two dense layers, one with “Softmax” activation function and L2 regularizer with a value of 0.005, another with “relu” activation function and a dropout of 0.2.
+The model is compiled with an SGD (Stochastic Gradient Descent) optimizer with hyperparameters: (learning rate) lr=0.0001, and momentum=0.9.
+
+Given the huge size of dataset (approximately 5 GB), the model was trained for only 10 epochs which took almost 6 hours even in Google Colaboratory with GPU runtime enabled.
+
+
 ## Reference
 
 Food-101 Dataset
