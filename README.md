@@ -7,10 +7,10 @@ Computer vision and Machine learning have been a hot topic in research in the pa
 ## Related work
 There have been various food classifications already done. Some of those works are briefly reported below. We actually took insights from some of them for our project:
 
-	[Food Image Classification with Convolutional Neural Network](https://ieeexplore.ieee.org/document/8550005) 
-	Analysis of food images: Features and Classification, https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5448982/
-	Multiclass Food Classification, https://www.kaggle.com/theimgclist/multiclass-food-classification-using-tensorflow
-	Build Video Classification Model, https://www.analyticsvidhya.com/blog/2019/09/step-by-step-deep-learning-tutorial-video-classification-python/
+- [Food Image Classification with Convolutional Neural Network](https://ieeexplore.ieee.org/document/8550005) 
+- [Analysis of food images: Features and Classification](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5448982/)
+- [Multiclass Food Classification](https://www.kaggle.com/theimgclist/multiclass-food-classification-using-tensorflow)
+- [Build Video Classification Model](https://www.analyticsvidhya.com/blog/2019/09/step-by-step-deep-learning-tutorial-video-classification-python/)
 
 
 
